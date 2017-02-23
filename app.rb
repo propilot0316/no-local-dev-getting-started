@@ -15,8 +15,8 @@ class Task < ActiveRecord::Base
 end
 
 get "/tasks" do
-#  @tasks = Task.all
-#  erb :index
+@tasks = Task.all
+erb :index
 end
 
 get "/create" do
